@@ -542,9 +542,9 @@ customize the cache system:
         method generates smaller files because it uses compression, but is often
         slower than the `raw` method, which does not use compression.
 
-    -   `qs`: Using `qs::qread()` and `qs::qsave()`). It requires the **qs**
-        package, which can be much faster than the above base R methods and also
-        supports compression.
+    -   `qs2`: Using `qs2::qs_read()` and `qs2::qs_save()`. It requires the
+        **qs2** package, which can be much faster than the above base R methods
+        and also supports compression.
 
 A special application of the `cache.hash` option is to freeze the computation of
 a code chunk, meaning that the cache will not be affected by any variable, even
